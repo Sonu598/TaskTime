@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTime - SignUp</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div id="main">
+            <div id="head">
+                <h1>Sign up for a FREE TaskTime trial</h1>
+            </div>
+            <div id="form">
+                <p>Start tracking your productivity in less than a minute!</p>
+                <form>
+                    <p>First and last name</p>
+                    <input type="text" id="name" placeholder="Type in your first and last name">
+                    <p>Email</p>
+                    <input type="email" id="email" placeholder="Type in your email address">
+                    <p>Password</p>
+                    <input type="password" id="password" placeholder="Create a Password">
+                    <button>SIGN UP FOR FREE</button>
+                </form>
+            </div>
+            <div id="texts">
+                <p>Try free for 14 days. No credit card required.</p>
+                <br>
+                <p>By signing up, you agree to our <a href="https://desktime.com/terms">terms</a> and <a href="https://desktime.com/privacy+">privacy policy</a>.</p>
+                <br>
+                <p>Are you already registered? <b><a href="/login.html">Log in here</a></b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        $('header').load('header.html');
+    })
+</script>
