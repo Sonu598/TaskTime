@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    .navbar{
+        width: 100%;
+        height: 100px;
+        margin-top: none;
+        border-top: 5px solid rgb(4, 183, 4);
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        background-color: white;
+    }
+    #texts{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    #texts>h4{
+        margin: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #texts>button{
+        width: 100px;
+        height: 50px;
+        margin: auto;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    #img{
+        margin: auto;
+    }
+    #img img{
+        width: 200px;
+        height: 60px;
+        cursor: pointer;
+    }
+    #login{
+        background-color: white;
+        border: 1px solid black;
+    }
+    #signup{
+        background-color: rgb(4, 183, 4);
+        color: white;
+        border: none;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div id="img">
+            <a href="/index.html"><img src="/images/WhatsApp Image 2023-02-21 at 10.28.57.jpg" alt=""></a>
+        </div>
+        <div id="texts">
+            <h4 id="demo">Demo</h4>
+            <h4 id="features">Features</h4>
+            <h4 id="pricing">Pricing</h4>
+            <h4 id="about">About Us</h4>
+            <h4 id="faq">FAQ</h4>
+            <h4 id="blog">Blog</h4>
+            <button id="login">LOGIN</button>
+            <button id="signup">SIGN UP</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const demo=document.getElementById('demo')
+    const features=document.getElementById('features')
+    const pricing=document.getElementById('pricing')
+    const about=document.getElementById('about')
+    const faq=document.getElementById('faq')
+    const blog=document.getElementById('blog')
+    const login=document.getElementById('login')
+    const signup=document.getElementById('signup')
+
+    demo.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/demo"
+    })
+    features.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/features"
+    })
+    pricing.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/pricing"
+    })
+    faq.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/faq"
+    })
+    about.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/about"
+    })
+    blog.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="https://desktime.com/blog/"
+    })
+    signup.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="signup.html"
+    })
+    login.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.href="login.html"
+    })
+</script>
