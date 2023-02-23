@@ -14,14 +14,14 @@ app.get("/", (req, res) => {
     res.send("Welcome to Homepage");
 })
 
-app.use("/users", userRouter)
+app.use("/user", userRouter)
 app.use(authenticate)
 
 
 app.listen(process.env.Port, async () => {
     try {
         await connection
-        console.log("conneccted with DB")
+        console.log("conneccted with Database")
     } catch (err) {
         console.log(err.message)
     }
