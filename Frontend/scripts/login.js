@@ -1,16 +1,16 @@
-//signup inputs
+//sigup inputs
+let button = document.getElementById("login")
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 
 //sign-in
 
-form2.addEventListener("submit", (e) => {
-  e.preventDefault();
+button.addEventListener("click", () => {
   let payload = {
     email: email.value,
     password: password.value
   }
-  fetch("http://localhost:2015/user/login", {
+  fetch(`http://localhost:2015/user/login`, {
     method: "POST",
     headers: {
       "Content-type": "application/json"
@@ -21,12 +21,12 @@ form2.addEventListener("submit", (e) => {
       if(res.msg==="Login successful"){
         localStorage.setItem("token", res.token)
         console.log(res)
-        swal("Good job!", "Lognin succesful", "success");
+        alert("Good job!", "Lognin succesful", "success");
         setTimeout(() => {
           window.open("product.html");
         }, 1000)
       }else if(res.msg==="wrong credentials"){
-        swal("Invalid !", "email & password did not match", "warning");
+        alert("Invalid !", "email & password did not match", "warning");
       }
       
     })
