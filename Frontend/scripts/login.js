@@ -1,9 +1,9 @@
-//sigup inputs
+//login inputs
 let button = document.getElementById("login")
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 
-//sign-in
+//login
 
 button.addEventListener("click", () => {
   let payload = {

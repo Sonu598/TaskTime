@@ -1,17 +1,19 @@
 // signup input
-let name = document.getElementById("name")
+let sname = document.getElementById("name")
 let email = document.getElementById("email");
 let password = document.getElementById("password");
+let signup = document.getElementById("signup-btn")
 
 //sign-up
 
-form1.addEventListener("submit", (e) => {
-    e.preventDefault()
+signup.addEventListener("click", () => {
+    // e.preventDefault()
     let payload = {
-      name: name.value,
+      name: sname.value,
       email: email.value,
       password: password.value
     }
+    console.log(payload);
     fetch("http://localhost:2015/user/signup", {
       method: "POST",
       headers: {
@@ -21,8 +23,9 @@ form1.addEventListener("submit", (e) => {
     }).then(res => res.json())
       .then((res) => {
         if (res.msg === "email is alredy presend in database") {
-          swal("email alredy exist");
+          alert("email alredy exist");
         } else {
+          alert(`Signup Successful !`);
           window.location.href="D:\spiky-crook-9700\Frontend\login.html"
         }
         console.log(res)
