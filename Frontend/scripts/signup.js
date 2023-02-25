@@ -6,14 +6,13 @@ let signup = document.getElementById("signup-btn")
 
 //sign-up
 
-signup.addEventListener("click", () => {
-    // e.preventDefault()
+signup.addEventListener("click", (e) => {
+    e.preventDefault()
     let payload = {
       name: sname.value,
       email: email.value,
       password: password.value
     }
-    console.log(payload);
     fetch("http://localhost:2015/user/signup", {
       method: "POST",
       headers: {
@@ -22,11 +21,11 @@ signup.addEventListener("click", () => {
       body: JSON.stringify(payload)
     }).then(res => res.json())
       .then((res) => {
-        if (res.msg === "email is alredy presend in database") {
+        if (res.msg === "email is alredy present in database") {
           alert("email alredy exist");
         } else {
           alert(`Signup Successful !`);
-          window.location.href="D:\spiky-crook-9700\Frontend\login.html"
+          window.location.href="./login.html"
         }
         console.log(res)
       })

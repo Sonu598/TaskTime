@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskTime - SignUp</title>
+    <link rel="stylesheet" href="./styles/signup.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -16,10 +17,12 @@
                 <h1>Sign up for a FREE TaskTime trial</h1>
             </div>
             <div id="form">
-                <p>Start tracking your productivity in less than a minute!</p>
+                <p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HZEtIzb89I0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
                 <form>
                     <p>First and last name</p>
-                    <input type="text" id="name" placeholder="Type in your first and last name">
+                    <input type="text" id="name" placeholder="Type in your name">
                     <p>Email</p>
                     <input type="email" id="email" placeholder="Type in your email address">
                     <p>Password</p>
@@ -32,15 +35,21 @@
                 <br>
                 <p>By signing up, you agree to our <a href="https://desktime.com/terms">terms</a> and <a href="https://desktime.com/privacy+">privacy policy</a>.</p>
                 <br>
-                <p>Are you already registered? <b><a href="/login.html">Log in here</a></b></p>
+                <p>Are you already registered? <b><a href="./login.html">Log in here</a></b></p>
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
 <script>
-    // $(function () {
-    //     $('header').load('header.html');
-    // })
+    $(function () {
+        $('header').load('header.html');
+    })
+</script>
+<script>
+    $(function () {
+        $('footer').load('footer.html');
+    })
 </script>
 <script src="./scripts/signup.js"></script>
