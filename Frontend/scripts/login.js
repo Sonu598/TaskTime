@@ -21,9 +21,9 @@ button.addEventListener("click", () => {
       if(res.msg==="Login successful"){
         localStorage.setItem("token", res.token)
         console.log(res)
-        alert("Good job!", "Lognin succesful", "success");
+        alert("Lognin succesful");
         setTimeout(() => {
-          window.open("product.html");
+          window.location.href="./userpage.html";
         }, 1000)
       }else if(res.msg==="wrong credentials"){
         alert("Invalid !", "email & password did not match", "warning");

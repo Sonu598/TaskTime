@@ -1,0 +1,100 @@
+/* Styles for the container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Styles for the main content area */
+  .main {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 150px;
+  }
+  
+  /* Styles for the login form */
+  #form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  #form p {
+    margin-top: 10px;
+  }
+  
+  #email, #password {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  #login {
+    background-color: rgb(4, 183, 4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login:hover {
+    background-color: rgb(5, 121, 5);
+  }
+  
+  /* Styles for the "Don't have an account" message */
+  #texts {
+    text-align: center;
+  }
+  
+  #texts a {
+    color: rgb(4, 183, 4);
+  }
+  
+  #head{
+    color: rgb(4, 183, 4);
+  }
+
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+    
+    #form {
+      margin-bottom: 10px;
+    }
+    
+    #login {
+      font-size: 16px;
+    }
+    
+    #texts {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #form {
+      margin-bottom: 0;
+    }
+    
+    #email, #password {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    #login {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    
+    #texts {
+      font-size: 14px;
+    }
+  }
+  

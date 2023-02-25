@@ -1,4 +1,146 @@
-.main{
-    width: 90%;
-    margin-top: 1000px;
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/* Main container styles */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Introduction section styles */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.intro h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(4, 183, 4);;
+}
+
+.intro p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro input {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.intro button {
+    width: 200px;
+    height: 40px;
+    background-color: #00dd04;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.intro button:hover {
+    background-color: #057707;
+}
+
+.intro a {
+    color: #00dd04;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.intro .video {
+    margin-top: 40px;
+}
+
+/* Clients section styles */
+.main > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.main > div:nth-child(2) img {
+    height: 50px;
+}
+
+/* Center section styles */
+#center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#center > div:nth-child(1) {
+    flex: 1;
+    margin-right: 40px;
+}
+
+#center > div:nth-child(2) {
+    flex: 1;
+}
+
+#center h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#center p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#center div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#center div > div h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#center div > div h4 img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#center div > div p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#center > div:nth-child(2) img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */

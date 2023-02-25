@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskTime - LogIn</title>
+    <link rel="stylesheet" href="./styles/login.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div>
-        <header></header>
-    </div>
+    <header></header>
     <div class="container">
         <div class="main">
             <div id="head">
@@ -25,15 +24,21 @@
                 <button id="login">LOGIN</button>
             </div>
             <div id="texts">
-                <p>Don't have an account yet? <b><a href="/signup.html">Sign up here!</a></b></p>
+                <p>Don't have an account yet? <b><a href="./signup.html">Sign up here!</a></b></p>
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
 <script>
     $(function () {
         $('header').load('header.html');
+    })
+</script>
+<script>
+    $(function () {
+        $('footer').load('footer.html');
     })
 </script>
 <script src="./scripts/login.js"></script>

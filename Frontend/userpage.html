@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My TaskTIme</title>
     <link rel="stylesheet" href="./styles/userpage.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <img class="navbar-logo" src="./images/WhatsApp Image 2023-02-21 at 10.28.57.jpg" alt="">
+      <div class="navbar-search">
+        <form>
+          <input type="text" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div id="navbar-icons">
+        <a href="#" class="navbar-icon">
+            <img id="notification" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBB4ELRwTrxy6lKCQJe9Q5ez9nIEqQHE-xRg&usqp=CAU" alt="">
+        </a>
+        <a href="#" class="navbar-icon">
+            <img id="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_g58CJ9sqVNoeJB-07E7sxSDI1P9H-lTTqQ&usqp=CAU" alt="">
+            <div><span>
+                <!-- append the username -->
+            </span></div>
+        </a>
+      </div>
+      <div class="navbar-toggle">
+        <span class="navbar-toggle-icon"></span>
+      </div>
+    </div>
+  </nav>
     <div id="main">
         <nav class="sidenav">
             <div class="navbar-logo">
@@ -52,32 +79,22 @@
             </div>
           </nav>
         <div id="page">
-            <nav class="navbar">
-                <div class="navbar-container">
-                  <a href="#" class="navbar-logo">My Website</a>
-                  <div class="navbar-search">
-                    <form>
-                      <input type="text" placeholder="Search...">
-                      <button type="submit">Search</button>
-                    </form>
-                  </div>
-                  <div id="navbar-icons">
-                    <a href="#" class="navbar-icon">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBB4ELRwTrxy6lKCQJe9Q5ez9nIEqQHE-xRg&usqp=CAU" alt="">
-                    </a>
-                    <a href="#" class="navbar-icon">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_g58CJ9sqVNoeJB-07E7sxSDI1P9H-lTTqQ&usqp=CAU" alt="">
-                        <div><span>
-                            <!-- append the username -->
-                        </span></div>
-                    </a>
-                  </div>
-                  <div class="navbar-toggle">
-                    <span class="navbar-toggle-icon"></span>
-                  </div>
-                </div>
-              </nav>              
+          <button id="create"><h2><h1>+</h1>  Create a New Task</h2></button>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
+<script>
+      $(function () {
+          $('footer').load('footer.html');
+      })
+</script>
+<script>
+  let create_btn=document.getElementById("create");
+
+  create_btn.addEventListener("click",(e)=>{
+      e.preventDefault();
+      window.location.href="./Tasks.html"
+  })
+</script>

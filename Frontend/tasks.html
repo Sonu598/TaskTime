@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTime - Task</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    /* Set box-sizing to border-box to include padding and borders in element's total width */
+* {
+  box-sizing: border-box;
+}
+
+/* Reset margin and padding for all elements */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style main container */
+#main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style task container */
+#task-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* Style input fields and buttons */
+input[type="text"],
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #17cd06;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008017;
+}
+
+/* Style headings */
+h4 {
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #main {
+    padding: 10px;
+  }
+  
+  input[type="text"],
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #task-container {
+    padding: 10px;
+  }
+  
+  input[type="text"],
+  button {
+    font-size: 12px;
+  }
+}
+
+ 
+</style>
+<body>
+    <header></header>
+    <div id="main">
+        <div id="task-container">
+            <h4>Task</h4>
+            <input type="text" id="task" placeholder="Task name">
+            <h4>Task Details</h4>
+            <input type="text" id="task-details" placeholder="Write about your task...">
+            <h4>Created by</h4>
+            <input type="text" id="creater" placeholder="Creater name">
+            <button id="create-btn">Create Task</button>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
+<script>
+    $(function () {
+        $('header').load('header.html');
+    })
+</script>
+<script>
+    $(function () {
+        $('footer').load('footer.html');
+    })
+</script>
+<script src="./scripts/tasks.js"></script>
