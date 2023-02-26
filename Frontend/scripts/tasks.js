@@ -15,7 +15,7 @@ create.addEventListener("click",(e)=>{
         method: "POST",
         headers: {
             "Content-type": "application/json",
-            "Authorization":localStorage.getItem("token")
+            // "Authorization":localStorage.getItem("token")
         },
         body: JSON.stringify(payload)
     }).then(res=>res.json())
