@@ -79,6 +79,7 @@
             </div>
           </nav>
         <div id="page">
+          <!-- <button id="view-task">View All Tasks</button> -->
           <button id="create"><h2><h1>+</h1>  Create a New Task</h2></button>
         </div>
     </div>
@@ -92,9 +93,14 @@
 </script>
 <script>
   let create_btn=document.getElementById("create");
+  let view=document.getElementById("view-task")
 
   create_btn.addEventListener("click",(e)=>{
       e.preventDefault();
-      window.location.href="./Tasks.html"
+      window.location.href="tasks.html"
+  })
+  view.addEventListener("click",(e)=>{
+      e.preventDefault()
+      window.location.href=""
   })
 </script>
